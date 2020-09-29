@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Acordes</title>
+	<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  	<meta name="viewport" content="width=device-width", initial-scale=1.0>
+  	<meta name="Descripcion" content="Diccionario y buscador de acordes de Cuatro">
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+<style type="text/css">
+	#spans{
+	margin: 2em;
+	padding: 10px;
+	background-color: #5f7dd6;
+	border-style: none; 
+	border-radius: 10px;"
+}
+</style>
+
+</head>
+
+<script type="text/javascript">
+
+function change() {
+
+	var lista = document.getElementById('nota');
+		var indiceseleccionado = lista.selectedIndex;
+		var opcionselecionado = lista.options[indiceseleccionado];
+		var textoselecionado = opcionselecionado.text;
+		var valorselecionado = opcionselecionado.value;
+
+		if (valorselecionado == "A") {
+			var irf = document.getElementById('container');
+			irf.setAttribute("src", "acordes/a.html");
+			document.getElementById('container').contentwindow.location.reload();
+		}
+		if (valorselecionado == "A#") {
+			var irf = document.getElementById('container');
+			irf.setAttribute("src", "acordes/as.html");
+			document.getElementById('container').contentwindow.location.reload();
+		}
+			if (valorselecionado == "B") {
+			var irf = document.getElementById('container');
+			irf.setAttribute("src", "acordes/b.html");
+			document.getElementById('container').contentwindow.location.reload();
+		}
+			if (valorselecionado == "C") {
+			var irf = document.getElementById('container');
+			irf.setAttribute("src", "acordes/c.html");
+			document.getElementById('container').contentwindow.location.reload();
+		}
+			if (valorselecionado == "C#") {
+			var irf = document.getElementById('container');
+			irf.setAttribute("src", "acordes/cs.html");
+			document.getElementById('container').contentwindow.location.reload();
+		}
+			if (valorselecionado == "D") {
+			var irf = document.getElementById('container');
+			irf.setAttribute("src", "acordes/d.html");
+			document.getElementById('container').contentwindow.location.reload();
+		}
+			if (valorselecionado == "D#") {
+			var irf = document.getElementById('container');
+			irf.setAttribute("src", "acordes/ds.html");
+			document.getElementById('container').contentwindow.location.reload();
+		}
+			if (valorselecionado == "E") {
+			var irf = document.getElementById('container');
+			irf.setAttribute("src", "acordes/e.html");
+			document.getElementById('container').contentwindow.location.reload();
+		}
+			if (valorselecionado == "F") {
+			var irf = document.getElementById('container');
+			irf.setAttribute("src", "acordes/f.html");
+			document.getElementById('container').contentwindow.location.reload();
+		}
+			if (valorselecionado == "F#") {
+			var irf = document.getElementById('container');
+			irf.setAttribute("src", "acordes/fs.html");
+			document.getElementById('container').contentwindow.location.reload();
+		}
+		if (valorselecionado == "G") {
+			var irf = document.getElementById('container');
+			irf.setAttribute("src", "acordes/g.html");
+			document.getElementById('container').contentwindow.location.reload();
+		}
+		if (valorselecionado == "G#") {
+			var irf = document.getElementById('container');
+			irf.setAttribute("src", "acordes/gs.html");
+			document.getElementById('container').contentwindow.location.reload();
+		}
+
+}
+
+</script>
+
+<body style="max-width: 100%; height: auto; text-align: center; color: white; background-color: #151d1e">
+
+<nav style="text-align: center;background-color: #272c26; padding-top: 1em; padding-bottom: 10px;">
+
+		<h3 style="text-align: center; margin-top: 10px ">Cuatro Acordes</h3>
+
+<span>
+<select id="nota" name="Acordes">
+<option value="A">A (La)</option>
+<option value="A#">A# (La#)</option>
+<option value="B">B (Si)</option>
+<option value="C">C (Do)</option>
+<option value="C#">C# (Do#)</option>
+<option value="D">D (Re)</option>
+<option value="D#">D# (Re#)</option>
+<option value="E">E (Mi)</option>
+<option value="F">F (Fa)</option>
+<option value="F#">F# (Fa#)</option>
+<option value="G">G (Sol)</option>
+<option value="G#">G# (Sol#)</option>
+</select>
+</span>
+<span>
+	<button id="spans" onclick="change()" name="button" type="button">Buscar</button>
+</span>
+<span>
+	<a id="spans" href="bases.html">Volver</a>
+</span>
+</nav>
+
+<article>
+	
+<iframe style="border-style: none; margin: 15px; width: 120mm; height: 70mm;" id="container" src=""></iframe>
+
+</article>
+
+</head>
+</body>
+</html>
